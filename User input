@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x, y, count = 3;
+    cout<< "Enter two positive integers: ";
+    cin>> x >> y;
+    while ((x <= 0 || y<=0) && count > 1){
+        count =count - 1;
+        cout<< "input is bad! Try again: ";
+    }
+    if (x > 0 && y > 0){
+        cout<< "Sum:" << x + y <<endl;
+        cout<< "Product: " << x*y <<endl;
+    }
+    return 0;
+}
