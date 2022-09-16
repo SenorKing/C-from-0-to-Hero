@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // asking the user for their name, age and height(inches)
+    cout << "What is your name?: ";
+    string name;
+    cin >> name;
+    cout << name << endl;
+    cout << "What is your age?: ";
+    int age;
+    cin >> age;
+    cout << age << endl;
+    cout << "What is your height in inches?: ";
+    int height;
+    cin >> height;
+    cout << height << endl;
+
+    // reading everything back to the user
+    cout << "Hello, " << name << "." << endl;
+    cout << "Your age in days is " << age * 365 << "days." << endl;
+    cout << "Your height in feet and inches is " << height / 12 << " feet "<< "and " << height%12 << " inches.";
+    return 0;
