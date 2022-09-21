@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+//Loops
+int main() {
+    // Declare a variable
+    int i = 0, n = 0;
+    //Get input from keyboard and initialize i.
+    cout << "Enter a number and press Enter: ";
+    cin >> n;
+    i = 1;
+
+    while (i <= n){        // While i less than or equal n,
+        cout << i << "";   // print i,
+        i = i + 1;         // adds 1 to i.
+    }
+    return 0;
+}
+// This program, when run, counts to the specified number. For example, if the user inputs 6, the program prints the following:
+1 2 3 4 5 6.
