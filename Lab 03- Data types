@@ -24,3 +24,17 @@ int main() {
  cout << "The perimeter of a letter-size sheet of paper is " << (2*b) + (2*h) << endl;
  return 0;
 }
+
+#include <iostream>
+
+using namespace std;
+// If Statement
+int main() {
+    int age;
+    cout << "Enter an age and press ENTER: ";
+    cin >> n;
+    if (n > 12 && n < 20) {
+        cout << "Subject is a teenager." << endl;
+    } else {
+        cout << "Subject is not a teenager." << endl;
+}
