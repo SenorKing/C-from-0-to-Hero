@@ -30,7 +30,7 @@ int main() {
 using namespace std;
 // If Statement
 int main() {
-    int age;
+    int n;
     cout << "Enter an age and press ENTER: ";
     cin >> n;
     if (n > 12 && n < 20) {
