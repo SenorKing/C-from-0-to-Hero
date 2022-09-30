@@ -2,7 +2,8 @@
 
 
 using namespace std;
-// HomeWork02
+// HomeWork02 #1
+
 int main() {
     int N;
     double grades=0.00;
@@ -39,3 +40,12 @@ int main() {
     cout << "End of Program. Thank you";
     cout <<"\n";
     }
+
+#2
+
+
+
+
+
+
+
