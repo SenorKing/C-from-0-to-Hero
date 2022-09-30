@@ -3,15 +3,13 @@
 using namespace std;
 //Loops
 int main() {
-    // Declare a variable
-    int i = 0, n = 0;
-    //Get input from keyboard and initialize i.
-    cout << "Enter a number and press Enter: ";
+                                                            
+    int i = 0, n = 0;                                       // Declare a variable                                                       
+    cout << "Enter a number and press Enter: ";             //Get input from keyboard and initialize i.
     cin >> n;
     i = 1;
-
-    while (i <= n){        // While i less than or equal n,
-        cout << i << "";   // print i,
+    while (i <= n){                                         // While i less than or equal n,
+        cout << i << " ";   // print i,
         i = i + 1;         // adds 1 to i.
     }
     return 0;
