@@ -1,0 +1,105 @@
+#include <iostream>
+
+
+using namespace std;
+// HomeWork02 #1
+
+int main() {
+    int N;
+    double grades=0.00;
+    double total=0.00, GradeAv;
+
+    //cout << "\n\n";
+    cout << "\tAverage Grade Solver Using For Loop in C++";
+    cout << "\n\n";
+    for (N = 0 ;; N++) {
+        cout << "Enter your Grade: ";
+        cin >> grades;
+
+        total += grades;
+
+        if (grades < 0) {
+            GradeAv = (total / N);
+            cout << "Your average test score is " << GradeAv;// << " and your letter grade is "<< ;
+            if (GradeAv >= 80){
+                cout<< " and Your Letter Grade is an A. ";
+            } else if (GradeAv <= 45){
+                cout << " and Your Letter Grade is a F. ";
+            } else if (GradeAv < 80 && GradeAv > 60){
+                cout << " and Your Letter Grade is a B. ";
+            } else if (60 > GradeAv && GradeAv > 50){
+                cout << " and Your Letter grade is a C. ";
+            } else if (50 >= GradeAv && GradeAv > 44){
+                cout << " and Your Letter grade is a D. ";
+            }
+            break;
+        }
+
+    }
+    cout << "\n\n";
+    cout << "End of Program. Thank you";
+    cout <<"\n";
+    }
+
+#2
+
+#include <iostream>
+
+using namespace std;
+// HomeWork02 #2
+bool checkprime(int n) {
+    if (n == 0 || n == 1) {
+        return false;
+    }
+    bool is_prime = true;
+    for (int i = 2; i <= n / 2; ++i) {
+        if (n % i == 0) {
+            is_prime = false;
+            break;
+        }
+    }
+    return is_prime;
+}
+int main(){
+    int n;
+    cout << "Enter a Positive Integer: ";
+    cin >> n;
+    int zeroCount=0, oneCount=0, primedigit=0, compositedigit=0, noofDigit=0;
+
+    if (n==0) {
+        zeroCount++;
+        noofDigit++;
+    } else{
+        while (n<0) {
+            cout << "Invalid input! " << "Enter a Positive Integer: ";
+            cin >> n;
+        }
+        int temp=n;
+        while (temp!=0){
+            int r=temp%10;
+            if (r==0){
+                zeroCount++;
+            }
+            else if (r==1){
+                oneCount++;
+            }
+            else if (checkprime(r)) {
+                primedigit++;
+            } else
+                compositedigit++;
+
+            temp= temp/10;
+            noofDigit++;
+        }
+    }
+    cout<<"There were "<<zeroCount<<" zeros, "<<oneCount<<" ones, "
+    <<primedigit<<" prime digits and "<<compositedigit<<" composite digits.";
+    cout<<endl<<"The number had "<<noofDigit<<" digits.";
+    return 0;
+}
+
+#3
+
+
+
+
